@@ -1,10 +1,10 @@
 import random
 import networkx as nx
 
-#RockPaperScissors, uses graphs
+#RockPaperScissors
 
 #Regular rock paper Scissors
-def rockPaperScissorsGraph():
+def rockPaperScissors():
     choices = ["rock", "paper", "scissors"]
     #directed graph of Win/Lose/Draw Conditions
     #e.g. rock -> scissors
@@ -30,7 +30,7 @@ def rockPaperScissorsGraph():
         print("LOSE!")
 
 #Irregular
-def rockPaperScissorsLizardSpockGraph():
+def rockPaperScissorsLizardSpock():
     choices = ["rock", "paper", "scissors", "lizard", "Spock"]
     #directed graph of Win/Lose/Draw Conditions
     #e.g. rock -> scissors
@@ -77,8 +77,8 @@ def rockPaperScissorsLizardSpockGraph():
 
 choice = input("Regular rock(1) or with spock(2)")
 if choice == "1":
-    rockPaperScissorsGraph()
+    rockPaperScissors()
 elif choice == "2":
-    rockPaperScissorsLizardSpockGraph()
+    rockPaperScissorsLizardSpock()
 else:
     print("Wrong choice")
